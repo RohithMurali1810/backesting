@@ -105,5 +105,3 @@ if st.button('Run Backtest'):
     st.write(f'Average Profit per Trade: {float(avg_profit_per_trade):.2f}')
     st.write(f'Average Profit per Win Trade:{float(avg_profit_per_win_trade):.2f}')
     st.write(f'Average Loss per Loss Trade:{float(avg_loss_per_loss_trade):.2f}')
-
-
