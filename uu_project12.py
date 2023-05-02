@@ -15,8 +15,9 @@ strategy = st.selectbox('Select the trading strategy:', options=['SMA', 'EMA', '
 
 if st.button('Run Backtest'):
     # Read data for the given stock symbol and date range
-    data = pd.read_csv(f"/Data/{symbol}.csv", parse_dates=['Date'], index_col='Date')
+    data = pd.read_csv(f"./Data/{symbol}.csv", parse_dates=['Date'], index_col='Date')
     data = data.loc[start_date:end_date]
+
 
     # Calculate moving averages and trading signals
     if strategy == 'SMA':
