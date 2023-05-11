@@ -8,7 +8,7 @@ st.title('Stock Trading Strategy Backtesting App')
 
 # Get user inputs
 principal = st.number_input('Enter the principal amount:', value=10000.0)
-symbol = st.text_input('Enter the stock symbol:')
+symbol = st.text_input('Enter the stock symbol:').upper()
 start_date = st.date_input('Enter the start date:')
 end_date = st.date_input('Enter the end date:')
 strategy = st.selectbox('Select the trading strategy:', options=['SMA', 'EMA', 'Mean Reversion'])
